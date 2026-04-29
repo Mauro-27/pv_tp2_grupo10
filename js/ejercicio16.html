@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Sumar Rango</title>
+</head>
+<body>
+    <h1>EJERCICIO 16</h1>
+    <script>
+        const numInicial = parseInt(prompt("Ingrese el numero inicial;"));
+        const numFinal = parseInt(prompt("Ingrese el numero final;"));
+        if (numInicial >= numFinal) {
+                document.write("Error: El número inicial debe ser menor o igual que el final.");
+        }
+        else{
+            let suma = 0;
+            for (let i = numInicial; i <= numFinal; i++) {
+            suma += i;
+            }
+            document.write("numeros ingresados: "+numInicial+" y "+numFinal);
+            document.write("  resultado de la suma: "+suma);
+        }
+    </script>
+
+</body>
+</html>
