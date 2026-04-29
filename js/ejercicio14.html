@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Chauque</title>
+</head>
+<body>
+    <p>Ejercicio 14</p>
+    <script>
+        const duplicar = (numeros) =>{
+            const dobles = numeros.map((num) => num * 2);
+            console.log(dobles);
+            document.write(` Los numeros duplicados son: ${dobles}`);
+        }
+
+        const cantidad = prompt("Ingrese la cantidad de numeros: ");
+        const numeros = [];
+        for(let i = 0; i < cantidad; i++){
+            let nro = prompt("Ingrese un numero: ");
+            nro = Number(nro);
+            numeros.push(nro);
+        }
+        document.write(`Los numeros ingresados son: ${numeros}`);
+        duplicar(numeros);
+
+    </script>
+</body>
+</html>

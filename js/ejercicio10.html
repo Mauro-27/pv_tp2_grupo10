@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Chauque</title>
+</head>
+<body>
+    <p>Ejercicio 10</p>
+    <script>
+        const numeros = prompt("Ingrese cantidad de numeros: ");
+        const array = [];
+        let acumulador = 0;
+
+        for (let i = 0; i < numeros; i++) {
+            let nro = prompt("Ingrese un numero entero: ");
+            nro = Number(nro);
+            array.push(nro);
+        }
+        for (let i = 0; i < array.length; i++) {
+            acumulador += array[i];
+            console.log(acumulador);
+        }
+        document.write(`Los numeros ingresados son: ${array}`)
+        document.write(` el promedio de los numeros ingresados es: ${acumulador/array.length}`)
+    </script>
+</body>
+</html>
