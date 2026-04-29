@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12 - Par o Impar</title>
+</head>
+<body>
+    <h1>Verificador de Paridad</h1>
+
+    <script>
+        // 1. Solicitamos el número al usuario
+        const ingreso = prompt("Por favor, ingresá un número:");
+        
+        // 2. Convertimos a número entero
+        const numero = parseInt(ingreso);
+
+        // 3. Lógica con if/else para verificar paridad
+        if (isNaN(numero)) {
+            document.write(`<p style="color: red;"><strong>Error:</strong> "${ingreso}" no es un número válido.</p>`);
+        } else {
+            // El operador % 2 nos dice si sobra algo al dividir por 2
+            if (numero % 2 === 0) {
+                document.write(`<h3>El número <strong>${numero}</strong> es PAR.</h3>`);
+            } else {
+                document.write(`<h3>El número <strong>${numero}</strong> es IMPAR.</h3>`);
+            }
+        }
+    </script>
+</body>
+</html>

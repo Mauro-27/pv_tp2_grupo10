@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 18 - UNJu</title>
+</head>
+<body>
+
+    <script>
+        // 1. La función se mantiene casi igual, pero cambiamos console.log por document.write
+        const calcularMayor = (numero1, numero2) => {
+            const n1 = parseFloat(numero1);
+            const n2 = parseFloat(numero2);
+
+            if (isNaN(n1) || isNaN(n2)) {
+                document.write(`<p style="color: red;"><strong>Error:</strong> Ingresaste valores no válidos.</p>`);
+            } else if (n1 > n2) {
+                document.write(`<h3>Resultado: El número mayor es <strong>${n1}</strong></h3>`);
+            } else if (n2 > n1) {
+                document.write(`<h3>Resultado: El número mayor es <strong>${n2}</strong></h3>`);
+            } else {
+                document.write(`<h3>Resultado: Ambos números son <strong>iguales</strong> (${n1})</h3>`);
+            }
+        };
+
+        // 2. Aquí es donde cambia todo: usás prompt en vez de rl.question
+        const num1 = prompt("Ingresá el primer número:");
+        const num2 = prompt("Ingresá el segundo número:");
+
+        // 3. Llamás a la función
+        calcularMayor(num1, num2);
+    </script>
+
+</body>
+</html>
