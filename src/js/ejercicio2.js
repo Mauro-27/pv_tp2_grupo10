@@ -1,4 +1,4 @@
-// --- EJERCICIO 2 ---
+
 // Definimos la función flecha para los impares
 const mostrarImpares = (cantidad) => {
     let contador = 0;
@@ -18,3 +18,4 @@ const mostrarImpares = (cantidad) => {
 
 // Ejecutamos la función
 mostrarImpares(10);
+
