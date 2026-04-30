@@ -1,4 +1,4 @@
-// --- EJERCICIO 6 ---
+
 // 1. Creamos el array con las edades
 const edades = [18, 22, 28, 30, 15, 42, 12, 35];
 
