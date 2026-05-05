@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #e5eaf0;
+    --card-bg: white;
+    --text-color: black;
+    --primary-color: #4a90e2;
+    --input-bg: #6e6e6e;
+    --input-border: #888888;
+    --transition: all 0.3s ease;
+    --border-radius: 15px;
+    --card-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Acá agregamos "select" para que comparta el estilo con los inputs */
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+}
+
+/* Cambia el estilo de las opciones del desplegable (depende del navegador) */
+option {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
