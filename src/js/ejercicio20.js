@@ -1,4 +1,4 @@
-import { mostrarDatos } from "../services/serviceRochaErika.js";
+import { mostrarDatos } from "../services/serviceEjercicio20.js";
 
 const nombre = document.querySelector("#nombre");
 const apellido = document.querySelector("#apellido");
