@@ -1,7 +1,10 @@
-import { servicioMauroCampos } from "../services/serviceMauroCampos";
+import { mostrarDatos } from "../services/serviceRochaErika.js";
 
-import { serviceGabrielChauque } from "../services/serviceGabrielChauque";
+const nombre = document.querySelector("#nombre");
+const apellido = document.querySelector("#apellido");
+const libreta = document.querySelector("#libreta");
+const boton = document.querySelector("#btnEnviar");
 
-import { servicioAlexanderRobles } from "../services/serviceAlexanderRobles";
-
-import { servicioLucasBarrientos } from "../services/serviceLucasBarrientos.js";
+boton.addEventListener("click", () => {
+    mostrarDatos(nombre.value, apellido.value, libreta.value);
+});
