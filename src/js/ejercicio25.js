@@ -1,4 +1,4 @@
-import { obtenerColorAleatorio } from './funciones25.js';
+import { obtenerColorAleatorio } from '../services/serviceEjercicio25.js';
 
 const boton = document.getElementById('btnCambiarColor');
 
