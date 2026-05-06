@@ -8,6 +8,6 @@ boton.addEventListener('click', () => {
     // Cambiamos el color de fondo de toda la página
     document.body.style.backgroundColor = nuevoColor;
     
-    // Mensaje en consola como pide el ejercicio
+    // Mensaje en consola 
     console.log(`%c Nuevo color aplicado: ${nuevoColor}`, `color: ${nuevoColor}; font-weight: bold;`);
 });
