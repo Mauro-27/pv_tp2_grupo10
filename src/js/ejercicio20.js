@@ -1,7 +1,18 @@
-import { servicioMauroCampos } from "../services/serviceMauroCampos";
+import { mostrarDatos } from "../services/serviceEjercicio20.js";
 
-import { serviceGabrielChauque } from "../services/serviceGabrielChauque";
+const nombre = document.querySelector("#nombre");
+const apellido = document.querySelector("#apellido");
+const libreta = document.querySelector("#libreta");
+const boton = document.querySelector("#btnEnviar");
 
-import { servicioAlexanderRobles } from "../services/serviceAlexanderRobles";
+boton.addEventListener("click", () => {
 
-import { servicioLucasBarrientos } from "../services/serviceLucasBarrientos.js";
+    const resultado = document.querySelector("#resultado");
+
+    resultado.innerHTML = mostrarDatos(
+        nombre.value,
+        apellido.value,
+        libreta.value
+    );
+
+});

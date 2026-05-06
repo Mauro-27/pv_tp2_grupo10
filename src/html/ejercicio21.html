@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ejercicio21.css">
+    <title>Ejercicio-21</title>
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1>Paises y Capitales</h1>
+            <p class="sub-titulo"> Elejir un pais para ver su capital</p>
+
+
+            <form>
+                <div class="form-group">
+                    <label for="paises">Paises de America</label>
+                    <select id="paises" required>
+                        <option value="" disabled selected>Seleccionar un Pais</option>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="ur">Uruguay</option>
+                        <option value="ch">Chile</option>
+                        <option value="pe">Peru</option>
+                        <option value="co">Colombia</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="capitales">Capital Correspondiente</label>
+                    <select id="capitales" disabled>
+                        <option value="" disabled selected>Esperando seleccion</option>
+                        <option value="ar">Buenos Aires</option>
+                        <option value="br">Brasilia</option>
+                        <option value="ur">Montevideo</option>
+                        <option value="ch">Santiago de Chile</option>
+                        <option value="pe">Lima</option>
+                        <option value="co">Bogota</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="../js/ejercicio21.js"></script>
+</body>
+</html>
