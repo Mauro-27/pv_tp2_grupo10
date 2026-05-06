@@ -1,8 +1,8 @@
 export const mostrarDatos = (nombre, apellido, libreta) => {
-    alert(
-        "Los datos ingresados son:\n" +
-        "Nombre: " + nombre + "\n" +
-        "Apellido: " + apellido + "\n" +
-        "Libreta Universitaria: " + libreta
-    );
+    return `
+        <h3>Los datos ingresados son:</h3>
+        <p><b>Nombre:</b> ${nombre}</p>
+        <p><b>Apellido:</b> ${apellido}</p>
+        <p><b>Libreta Universitaria:</b> ${libreta}</p>
+    `;
 };
