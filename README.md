@@ -1,4 +1,4 @@
-#NOMBRES DE LOS INTEGRANTES (GRUPO 10)
+# NOMBRES DE LOS INTEGRANTES (GRUPO 10)
 - Campos Mauro Ismael (Mauro-27)
 - Robles Alexander (alexander555-web)
 - Chauque Gabriel (GabriellChau)
